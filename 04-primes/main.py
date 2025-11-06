@@ -2,7 +2,14 @@ import math
 
 #### Fonction secondaire
 def isprime(p):
-    for d in range(2, math.ceil(math.sqrt(p)) + 1):
+    if p < 2:
+        return False
+    if p == 2:
+        return True
+    if p % 2 == 0:
+        return False
+    limit = int(math.sqrt(p)) + 1
+    for d in range(3, limit, 2):
         if p % d == 0:
             return False
     return True
@@ -15,7 +22,6 @@ def main():
             print(n, end=", ")
 
     print()
-
 
 if __name__ == "__main__":
     main()
