@@ -1,8 +1,12 @@
+import unicodedata
+
 #### Fonction secondaire
 def ispalindrome(p):
     p = p.casefold()
     p = unicodedata.normalize("NFKD", p)
     p = "".join(ch for ch in p if not unicodedata.combining(ch))
+    p = p.replace(" ", "")
+    print(p)
     return p == p[::-1]
 
 #### Fonction principale
