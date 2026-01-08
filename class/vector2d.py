@@ -68,17 +68,17 @@ class Vector2D(object):
 
 def main():
     pass
-    # O = Point2D()
-    # A = Point2D(1, 0)
-    # B = Point2D(1, 1)
-    # v1 = Vector2D(O,A)
-    # v2 = Vector2D(O,B)
-    # print(v1)
-    # print(v2)
-    # print(abs(v1))
-    # print(abs(v2))
-    # print(-v1)
-    # print(v1+v2)
+    O = Point2D()
+    A = Point2D(1, 0)
+    B = Point2D(1, 1)
+    v1 = Vector2D(O,A)
+    v2 = Vector2D(O,B)
+    print(v1)
+    print(v2)
+    print(abs(v1))
+    print(abs(v2))
+    print(-v1)
+    print(v1+v2)
 
 if __name__ == "__main__":
     main()

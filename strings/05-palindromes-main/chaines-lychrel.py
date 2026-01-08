@@ -38,9 +38,11 @@ def lychrel(n):
     2
     """
     k = 0
-    while not ispalindrome(str(n)):
+    while True:
         n += int(str(n)[::-1])
         k += 1
+        if ispalindrome(str(n)):
+            break
     return k
 
 def main():

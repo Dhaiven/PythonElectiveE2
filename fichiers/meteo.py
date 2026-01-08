@@ -16,7 +16,7 @@ def read_meteo_data(filename):
     >>> isinstance(data, list)
     True
     >>> len(data)
-    14299w
+    14299
     >>> data[10][0:7]
     'Alencon'
     >>> data[10][8:10]
